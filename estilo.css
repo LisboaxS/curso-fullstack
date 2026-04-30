@@ -1,0 +1,15 @@
+body {
+  background-color: black
+}
+header{
+  background-color: rgba(97, 95, 95, 0.418);
+  padding: 20px;
+  border-color: #fdd3177a;
+}
+footer{
+  background: #0a0a0a;
+  color: #fff;
+  padding: 30px;
+  border-top: 1px solid rgba(238, 192, 24, 0.2);
+  text-align: center;
+}
