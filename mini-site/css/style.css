@@ -95,3 +95,24 @@ header nav ul a:hover{
 .card img {
     border: 2px solid rgb(228, 225, 225);
 }
+
+.extra{
+    background-color: #ddd;
+    padding: 30px;
+    text-align: center;
+}
+
+footer{
+    font-size: 15px;
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Página Sobre */
+.paginaSobre h1{
+    color: brown;
+    padding: 10px;
+}
