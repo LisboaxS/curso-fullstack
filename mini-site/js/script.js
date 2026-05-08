@@ -1,7 +1,15 @@
-// alert("Olá mundo")
-function minhaFuncao(){
-    alert("Minha função")
-    console.log("Sou dev e você")
-}
+let valor = 7;
 
-minhaFuncao()
+console.log( "Agora vale ", valor)
+
+valor = valor + 1
+
+console.log( "Agora vale ", valor)
+
+valor++;
+
+console.log("Agora vale ", valor)
+
+valor-= 4;
+
+console.log("Agora vale ", valor)
