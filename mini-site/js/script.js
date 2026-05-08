@@ -1,4 +1,19 @@
-for (let i = -2; i <=5; i++){
-    console.log("O valor de i vale: " + i)
+const botoes = document.querySelectorAll(".accordion")
+const paneis = document.querySelectorAll(".panel")
+
+for(let i = 0; i < botoes.length; i++){
+    
+    let numero = i;
+    
+    botoes[numero].onclick = function(){
+        if(paneis[numero].style.display == "block"){
+            paneis[numero].style.display = "none"
+
+        } else {
+            paneis[numero].style.display = "block"
+        }
+    }
 
 }
+
+// Dica: console.log ajuda a debugar o codigo //
