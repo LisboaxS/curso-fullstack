@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    
+
     background: rgb(230, 227, 227);
 
 }
@@ -24,7 +24,7 @@ header {
 
     display: flex;
     border-bottom: 2px solid rgb(14, 14, 214);
-    
+
 
 }
 .contentHeader{
@@ -79,8 +79,8 @@ header nav ul a:hover{
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 20px;
-    
-    
+
+
 
 }
 
@@ -130,10 +130,13 @@ footer{
   outline: none;
   font-size: 15px;
   transition: 0.4s;
+  font-weight: bold;
+  border: solid 1px gray;
+  /* margin-bottom: 10px; */
 }
 
 .active, .accordion:hover {
-  background-color: #ccc; 
+  background-color: #ccc;
 }
 
 .panel {
@@ -142,3 +145,11 @@ footer{
   background-color: white;
   overflow: hidden;
 }
+
+.panel p {
+    padding: 25px;
+    line-height: 21px;
+}
+
+/* Contato */
+
