@@ -113,6 +113,7 @@ footer{
 
 /* Página Sobre */
 .paginaSobre h1{
+    color: rgb(13, 13, 161);
     margin-top: 30px;
     justify-self: center;
     padding: 10px;

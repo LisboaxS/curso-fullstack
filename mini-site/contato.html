@@ -27,10 +27,10 @@
             <h1>Dados</h1>
         
         <section>
-            <form>
+            <form id="meuFormulario">
                 <article class="form-group">
                     <label for="nome">Nome</label>
-                    <input type="text">
+                    <input type="text" id="nome">
 
                 </article>
             
@@ -39,9 +39,9 @@
                     <input type="tel" id="telefone">
                 </article>
 
-                <article>
+                <article class="form-group">
                     <label for="sexo">SEXO</label>
-                    <select name="" id="">
+                    <select id="sexo">
                         <option value="m">Masculino</option>
                         <option value="f">Feminino</option>
                     </select>
@@ -54,7 +54,7 @@
                 </article>
 
                 <article class="form-group">
-                    <button>Enviar</button>
+                    <button type="submit">Enviar</button>
                 </article>
 
                 <article class="cadastro">
@@ -71,5 +71,8 @@
         </section>
 
     </div>
+    
+    <script src="./js/validacao.js"></script>
+
 </body>
 </html>
