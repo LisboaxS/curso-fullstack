@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    
+
     background: rgb(230, 227, 227);
 
 }
@@ -24,7 +24,7 @@ header {
 
     display: flex;
     border-bottom: 2px solid rgb(14, 14, 214);
-    
+
 
 }
 .contentHeader{
@@ -79,8 +79,8 @@ header nav ul a:hover{
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 20px;
-    
-    
+
+
 
 }
 
@@ -113,7 +113,9 @@ footer{
 
 /* Página Sobre */
 .paginaSobre h1{
-    color: brown;
+    color: rgb(13, 13, 161);
+    margin-top: 30px;
+    justify-self: center;
     padding: 10px;
     margin-bottom: 20px;
 }
@@ -130,10 +132,13 @@ footer{
   outline: none;
   font-size: 15px;
   transition: 0.4s;
+  font-weight: bold;
+  border: solid 1px gray;
+  /* margin-bottom: 10px; */
 }
 
 .active, .accordion:hover {
-  background-color: #ccc; 
+  background-color: #ccc;
 }
 
 .panel {
@@ -142,3 +147,60 @@ footer{
   background-color: white;
   overflow: hidden;
 }
+
+.panel p {
+    padding: 25px;
+    line-height: 21px;
+}
+
+/* Formulário */
+form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 350px;
+    justify-self: center;
+
+}
+
+form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+form label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+form input,
+form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+form .titulo-checkbox {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+form button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(39, 39, 234);
+  color: white;
+  cursor: pointer;
+}
+
+.cadastro {
+    font-size: 18px;
+
+}
+.cadastro a{
+    text-decoration: none;
+    color: blue;
+}
+
