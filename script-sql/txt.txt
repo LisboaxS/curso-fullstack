@@ -1,0 +1,27 @@
+show databases;
+(clicar no raio)
+
+use futebol;
+ctrl + enter
+
+/Estudar chave primaria, chave incrementada e chave única /
+----------------------------------------
+-- Criando uma tabela --		| 	-VARCHAR - string
+CREATE TABLE conta (			|	-Os números entre parênteses são o máximo de
+    id INT PRIMARY KEY AUTO_INCREMENT;	|	 caracteres permitidos
+    nome VARCHAR(50), 			|
+    saldo DECIMAL, 			|
+    senha VARCHAR(6)			|
+);					|
+----------------------------------------|
+					|
+-- Inserindo dados --			|
+INSERT INTO  conta (nome, saldo, senha)	|
+VALUES ('Doris', 10, '123');		|
+					|
+SELECT * FROM conta;			|
+					|
+----------------------------------------|
+-- Apagando dados do banco --		|
+delete from conta where id=2;		|
+-----------------------------------------
