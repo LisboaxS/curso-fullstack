@@ -1,0 +1,4 @@
+.gitignore //Cria um arquivo para ignorar algum outro arquivo ao subir no GitHub
+node modules //pasta gigante que será ignorada
+
+estudar commit semântico (commit -m "feat: add")
