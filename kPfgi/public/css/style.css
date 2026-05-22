@@ -1,3 +1,37 @@
 body{
-    background: red;
+    background: rgb(211, 210, 210);
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    height: 700px;
+}
+
+header{
+    background: rgba(0, 89, 255, 0.507);
+    
+}
+
+header h1{
+    padding: 35px 0 0 24px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+main section{
+    display: flex;
+    justify-content: space-around;
+}
+
+main section article{
+    border: 1px red solid;
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
