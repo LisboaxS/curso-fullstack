@@ -20,6 +20,13 @@ function buscarNomePorId(id){
     return nomes.filter((nome) => nome.id == id)
 }
 
+// Pegar a posição ou index do elemento do Array por id
+function buscarIdNomes(id){
+    // findIndex
+    return nomes.findIndex(nome => nome?.id == id)
+}
+
+
 //rota principal
 app.get ('/', (req, res) => {
     res.send('Hello World!')
@@ -46,6 +53,37 @@ app.get("/listaNomes/:id", (req,res) => {
 app.post("/listaNomes", (req,res) =>{
     nomes.push(req.body)
     res.status(201).send("nomes cadastrados com sucesso!")
+})
+
+// Criando Rota Excluir
+app.delete('/listaNomes/:id', (req,res) => {
+    let id = req.params.id;
+    let index = buscarIdNomes(id)
+
+    //se não encontrar, retornar erro
+    if(index === -1){
+        return res.status(404).send(`Nenhum nome com o id ${id} foi encontrado`)
+    }
+
+    //Splice
+    nomes.splice(index, 1)
+    return res.send(`Nomes com id ${req.params.id} excluida com sucesso`)
+})
+
+// Rota Alterar
+app.put('/listaNomes/:id', (req,res) => {
+    let index = buscarIdNomes(req.params.id)
+     //se não encontrar, retornar erro
+    if(index === -1){
+        return res.status(404).send(`Nenhum nome com o id ${id} foi encontrado`)
+    }
+
+    nomes[index].nome = req.body.nome
+    nomes[index].idade = req.body.idade
+    nomes[index].casado = req.body.casado
+
+    res.json(nomes)
+
 })
 
 
